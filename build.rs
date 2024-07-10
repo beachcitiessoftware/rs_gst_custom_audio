@@ -1,7 +1,7 @@
 use std::env;
 use std::fs;
 use std::path::PathBuf;
-use tracing::{info, warn, error, debug, trace, Level};
+use tracing::{info, Level};
 use tracing_subscriber;
 
 /// Custom build script

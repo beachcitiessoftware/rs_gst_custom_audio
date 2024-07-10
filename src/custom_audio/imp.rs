@@ -1,9 +1,7 @@
 use std::env;
 use std::sync::Mutex;
-use std::fmt;
 use hex;
 use gst::glib;
-use gst::prelude::*;
 use gst_video::subclass::prelude::*;
 use dotenv::dotenv;
 use gst_audio::subclass::prelude::AudioFilterImpl;
@@ -11,8 +9,7 @@ use gst_base::subclass::BaseTransformMode;
 use once_cell::sync::Lazy;
 use reqwest::blocking;
 use reqwest::blocking::multipart;
-use tokio::runtime::Runtime;
-use tracing::{span, info, warn, error, debug, trace, Level};
+use tracing::{warn, error, trace, Level};
 use tracing_subscriber;
 
 /// The default trace level
@@ -30,7 +27,7 @@ static CAT: Lazy<gst::DebugCategory> = Lazy::new(|| {
 /// CustomAudio plugin for GStreamer
 pub struct CustomAudio {
     processed_count: Mutex<i32>,
-    process_audio_endpoint: String,
+    process_audio_endpoint: String
 }
 
 impl Default for CustomAudio {
