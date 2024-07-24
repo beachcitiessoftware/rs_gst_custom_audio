@@ -1,4 +1,4 @@
-# Custom Audio Plugin for Gstreamer in Rust
+# Gstreamer in Rust, which calls a REST-API to process audio samples
 
 Build a debug build with:
 
