@@ -1,4 +1,4 @@
-# Gstreamer in Rust, which calls a REST-API to process audio samples
+# Rust Gstreamer plugin, which calls a REST-API to process audio samples
 
 Build a debug build with:
 
