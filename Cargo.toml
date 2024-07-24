@@ -2,7 +2,7 @@
 name = "rs_gst_custom_audio"
 version = "1.0.0"
 edition = "2021"
-authors = ["Michael Honaker <mike@beachcitiessoft.com>"]
+authors = ["Michael Honaker"]
 repository = "https://gitlab.freedesktop.org/gstreamer/"
 license = "MIT/X11"
 description = "Custom GStreamer Audio Plugin"
