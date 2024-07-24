@@ -73,7 +73,7 @@ impl ElementImpl for CustomAudio {
                 "Custom Audio Filter",
                 "Filter/Effect/Converter/Audio",
                 "Executes arbitrary function on audio.",
-                "Michael Honaker <mike@beachcitiessoft.com>",
+                "Michael Honaker",
             )
         });
         Some(&*ELEMENT_METADATA)
